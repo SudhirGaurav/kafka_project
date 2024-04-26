@@ -1,8 +1,9 @@
-package com.sudhirindustries.ws.product_microservice.service;
+package com.sudhirindustries.ws.codecommon;
 
 import java.math.BigDecimal;
 
 //This event class is up to u how need to be designed . Based on service need u can design this class
+//This class ll be used to send event to kafka 
 public class ProductCreatedEvent {
 	private String productId;
 	private String title;

@@ -9,19 +9,14 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sudhirindustries.ws</groupId>
-	<artifactId>product_microservice</artifactId>
+	<artifactId>email-notification-microservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>product_microservice</name>
-	<description>Demo project for Spring Boot</description>
+	<name>email-notification-microservice</name>
+	<description>This is consumer of produce_service producer MS</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>com.sudhirindustries.ws</groupId>
-			<artifactId>code-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
