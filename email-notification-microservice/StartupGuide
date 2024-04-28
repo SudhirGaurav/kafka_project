@@ -1,0 +1,30 @@
+
+NOTE : This project is not yet deployed on Docker 
+
+1. Need to download kafka serevr , and configure ../conf/serevr.property file [This is already done in office laptop]
+2. start three kafka agent/serever on terminal .
+
+//*******************In case of single consumer*****************************
+Clone code...
+	Git hub url: https://github.com/SudhirGaurav/kafka_project.git
+	branch : master-v1
+3. Start product_microservie through main method 
+	Note: .properties file have server.port=0 . This will generate random port during serevr startup
+4. Start email-notification-microservice through main method
+	Note: .properties file have server.port=0 . This will generate random port during server startup
+5. import code-common also . this is just a library project
+6. Hit post URL from postman
+
+
+//***********************In case of multiple consumer ******
+Step 1,2,3 are same
+Clone code...
+	Git hub url: https://github.com/SudhirGaurav/kafka_project.git
+	branch : multiple_consumer-V2
+
+ 4. Start multipe email-notification-microservice through main method by providing your own ports 
+ 	or,
+ 	Start multipe email-notification-microservice through terminal . Run bellow command where pom is present
+ 		mvn spring-boot:run
+ 	Note : must read the console , u ll definitely enjoy
+ 

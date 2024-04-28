@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import com.sudhirindustries.ws.codecommon.ProductCreatedEvent;
 
 @Component
-@KafkaListener(topics="product_create_event_topic")
+@KafkaListener(topics="product_create_event_topic" , groupId = "product-created-events" )
 public class ProductCreatedEventHandler {
 
 	Logger logger = LoggerFactory.getLogger(this.getClass());
