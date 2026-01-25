@@ -7,3 +7,4 @@
 
 #.kafka project build hirarchy 
 	code-common --> email-notification-microservice[on topic product_create_event_topic]  --> product_microservice
+#. To more detail about the project read : StartupGuide under 'email-notification-microservice'
