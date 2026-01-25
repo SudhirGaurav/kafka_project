@@ -16,7 +16,9 @@ public class ProductCreatedEventHandler {
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 	@KafkaHandler
 	 public void methodHandle(ProductCreatedEvent productCreatedEvent) {
+		logger.info("===========================================\n");
 		logger.info("Event recceived :"+productCreatedEvent);
+		logger.info("===========================================\n");
 			 
 	 }
 }
