@@ -14,6 +14,13 @@ Clone code...
 	Note: .properties file have server.port=0 . This will generate random port during server startup
 5. import code-common also . this is just a library project
 6. Hit post URL from postman
+7. Post : http://localhost:50318/products
+	Request Body 
+	{
+	    "title" : "HC VERMA",
+	    "price" : "123",
+	    "quantity" : "10"
+	}
 
 
 //***********************In case of multiple consumer ******
@@ -27,4 +34,10 @@ Clone code...
  	Start multipe email-notification-microservice through terminal . Run bellow command where pom is present
  		mvn spring-boot:run
  	Note : must read the console , u ll definitely enjoy
- 
+
+==************************************************************************
+ Project Architecture ,
+	product_microservice [Producer]--> Kafka --> email-notification-microservice [Consumer]
+
+#.kafka project build hirarchy 
+	code-common --> email-notification-microservice --> product_microservice
